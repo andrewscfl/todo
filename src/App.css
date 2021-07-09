@@ -1,38 +1,287 @@
-.App {
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+
+.nav{
+  width: 100%;
+  background-color: #282738;
+  color:white;
+  
+}
+.top-bar-wrapper{
+  padding-right: 30px;
+  padding-left: 30px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-title{
+  font-size: 25px;
+}
+
+.iconToggle{
+  font-size: 20px;
+  width: 100%;
+  cursor:pointer;
+}
+
+.root{
+  background-color:black;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.selector-bar{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.selector-option{
+  cursor:pointer;
+}
+
+.underline{
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: white;
+  padding-bottom: 10px;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-view-wrapper{
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search-input{
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  border-radius: 5px;
+  color:white;
+  background-color:#292639;
+  border-style:none;
+}
+
+.select-input{
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  border-radius: 5px;
+  color:white;
+  background-color:#292639;
+  border-style:none;
+  -webkit-appearance: none;
+}
+
+.card{
+  background-color:#292639;
+  margin-top:10px;
+  color:white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  min-height: 70px;
+  max-height: 500px;
+  align-items: center;
+  
+
+}
+
+.card-user{
+
+}
+
+.cardlist-scrollable{
+  overflow-y: scroll !important;
+  max-height: 65vh;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card-completed div{
+  flex: 1;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.card-info{
+  flex: 4;
+}
+
+.closed{
+  background-color: #6BDD8A;
+  transition: background-color .5s linear;
+  -webkit-transition: background-color .5s linear;
+    -moz-transition: background-color .5s linear;
+    -ms-transition: background-color .5s linear;
+    -o-transition:background-color .5s linear;
+}
+
+
+.open{
+  background-color: #3B3753;
+  
+}
+
+.fadeNow{
+  /* background-color:rgba(0, 0, 0, 0);
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s; */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+}
+
+
+
+.complete-icon{
+  color:white;
+  font-size: 20px;
+
+}
+
+.floating-add-button{
+  background-color:white;
+  color: black;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+
+}
+
+.floating-add-button p {
+  font-size: 20px;
+}
+
+
+.slide-pane__content{
+  background-color: black;
+}
+
+.button-wrapper {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.finish{
+  background-color: #6ADD8A;
+  border-radius: 10px;
+  
+}
+
+.add-view-wrapper{
   display: flex;
   flex-direction: column;
+  
+}
+
+.add-view-wrapper .add-view-wrapper-element{
+  flex: 1;
+}
+
+.slideup-title h2{
+  text-align: center;
+  color:white;
+}
+
+.slideup-header{
+  margin-bottom: 20px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.slideup-header div{
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-arrow{
+  color:white;
+  font-size: 20px;
+}
+
+.slideup-back{
+  cursor: pointer;
+}
+
+.card-edit{
+  color:white;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
 }
