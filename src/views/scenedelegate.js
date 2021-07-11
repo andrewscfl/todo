@@ -70,6 +70,7 @@ export default function SceneDelegate() {
             />
 
             <div className="main-view-wrapper">
+                <div className="search-wrapper">
                 <Search
                     status={view}
                     queryCallback={(obj) => {
@@ -91,6 +92,8 @@ export default function SceneDelegate() {
                         setQuery(queryListArr)
                     }}
                 />
+                </div>
+                <div className="main-view-divider"></div>
                 {(function () {
                     switch (view) {
                         case "open":
@@ -137,6 +140,7 @@ export default function SceneDelegate() {
                     setShowModal(false)
                 }}
             >
+                <div className="slide-up-divider"></div>
                 {(function () {
                     switch (modalView) {
                         case "add":

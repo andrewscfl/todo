@@ -11,7 +11,7 @@ export default function Search(props){
             //callback sends back object with current value of input and status (open or close)
             props.queryCallback({term : e.target.value, status: props.status})
         }} 
-        placeholder={`Search`}
+        placeholder={`Search Todo's`}
          />
     </div>
     );

@@ -17,7 +17,7 @@
 }
 
 .top-bar-title{
-  font-size: 25px;
+  font-size: 32px;
 }
 
 .iconToggle{
@@ -40,14 +40,19 @@
 
 .selector-option{
   cursor:pointer;
+  opacity: 0.7;
+  font-size: 18px;
+  width: 96px;
+  text-align: center;
 }
 
 .underline{
+  opacity: 1 !important;
   border-style: solid;
   border-width: 0px 0px 3px 0px;
   border-color: white;
   padding-bottom: 10px;
-  text-align: center;
+  
 
 }
 
@@ -139,14 +144,6 @@
   
 }
 
-.fadeNow{
-  /* background-color:rgba(0, 0, 0, 0);
-  animation: fadeOut ease 1s;
-  -webkit-animation: fadeOut ease 1s;
-  -moz-animation: fadeOut ease 1s;
-  -o-animation: fadeOut ease 1s;
-  -ms-animation: fadeOut ease 1s; */
-}
 
 @keyframes fadeOut {
   0% {
@@ -286,7 +283,66 @@
   margin-left: 10px;
 }
 
+::placeholder{
+  color:white;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 
 h1,h2,h3,h4,p, strong, .card-user{
   font-family: 'Poppins', sans-serif;
+}
+
+.card-user {
+  background-color: #3F3C4E;
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.card-title{
+  font-size: 14px;
+}
+
+.top-bar-title h2{
+  font-size: 32px;
+}
+
+.main-view-divider{
+  border: 2px solid #292639;
+  width: 78px;
+  margin: 0 auto;
+}
+
+
+.search-wrapper{
+  margin-bottom: 20px;
+}
+
+
+.main-view-divider {
+  border: 1px solid #292639;
+  width: 78px;
+  margin: 0 auto;
+}
+
+
+.slide-up-divider {
+  background: #373157;
+  border-radius: 8px;
+  width: 40px;
+  height: 4px;
+  margin: 0 auto;
+}
+
+
+.slide-pane.slide-pane_from_bottom.modal-parent.content-after-open {
+  background-color: #ffffff00;
+}
+
+.slide-pane__content{
+  border-radius: 24px 24px 0px 0px;
 }
