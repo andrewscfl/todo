@@ -35,7 +35,7 @@ export default function Card(props) {
             <div className="card-info">
                 <div className="card-title"><strong>{props.title}</strong></div>
                 <div className={`card-user ${isHovering ? 'hover-card-user' : ''}`}>
-                    User: {props.userId}
+                    User: <span>{props.userId}</span>
                 </div>
             </div>
             <div
